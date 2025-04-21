@@ -18,11 +18,10 @@ html {
   object-fit: cover;
   z-index: 1;
 
-  -webkit-mask-image: url(#video-mask);
-  mask-image: url(#video-mask);
-  -webkit-mask-composite: source-in;
-  mask-composite: intersect;
+  mask: url(#video-mask);
+  -webkit-mask: url(#video-mask);
   mask-type: luminance;
+  -webkit-mask-type: luminance;
 }
 
 #video-mask-layer {
