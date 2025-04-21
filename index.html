@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Background video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video.mp4" type="video/mp4" />
+  </video>
+
+  <!-- SVG mask layer -->
+  <svg id="video-mask-layer" viewBox="0 0 1200 600" preserveAspectRatio="none">
+    <defs>
+      <mask id="video-mask">
+        <rect x="0" y="0" width="100%" height="100%" fill="black" />
+        <rect id="mask-1" fill="white" />
+        <rect id="mask-2" fill="white" />
+        <rect id="mask-3" fill="white" />
+        <rect id="mask-4" fill="white" />
+      </mask>
+    </defs>
+  </svg>
+
+  <!-- Text layer -->
+  <div class="text">
+    We’re here <span class="placeholder placeholder-1"></span> to make<br />
+    healthy <span class="placeholder placeholder-2"></span> living effortless,<br />
+    so you can <span class="placeholder placeholder-3"></span> live longer<br />
+    and happier <span class="placeholder placeholder-4"></span>
+  </div>
+
+</body>
+
+</html>
