@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
   background-color: black;
@@ -18,20 +17,12 @@ html {
   object-fit: cover;
   z-index: 1;
 
-  mask: url(#video-mask);
-  -webkit-mask: url(#video-mask);
+  mask-image: none;
+  -webkit-mask-image: none;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   mask-type: luminance;
   -webkit-mask-type: luminance;
-}
-
-#video-mask-layer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 2;
-  pointer-events: none;
 }
 
 .text {
